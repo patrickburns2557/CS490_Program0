@@ -11,10 +11,18 @@ a sphere with that radius.
 const INCH_TO_CENTIMETER: f64 = 2.54;
 const PI: f64 = 3.14159;
 fn main() {
+    let mut input = "";
+
     println!("This program will calculate the volume of a sphere. ");
-    let test: f64 = 1.0;
-    println!("cm: {}", calculate_volume_cm(test));
-    println!("in: {}", calculate_volume_in(test));
+    println!("You can type \"quit\" at any time to close the program.");
+    
+    loop {
+        
+
+
+    }
+
+
 }
 
 
