@@ -11,7 +11,7 @@ a sphere with that radius.
 use std::io;
 
 const INCH_TO_CENTIMETER: f64 = 2.54;
-const PI: f64 = 3.14159;
+
 fn main() {
     println!("This program will calculate the volume of a sphere. ");
     println!("You can type \"quit\" at any time to close the program.");
@@ -50,7 +50,7 @@ fn main() {
 //Parameters: input_radius - radius of sphere in centimeters
 //Returns: volume of sphere in square centimeters
 fn calculate_volume_cm(input_radius: f64) -> f64 {
-    (4.0 / 3.0) * PI * input_radius * input_radius * input_radius
+    (4.0 / 3.0) * std::f64::consts::PI * input_radius * input_radius * input_radius //uses RUST's built in PI constant
 }
 
 
@@ -59,5 +59,5 @@ fn calculate_volume_cm(input_radius: f64) -> f64 {
 //Returns: volume of sphere in cubic inches
 fn calculate_volume_in(input_radius: f64) -> f64 {
     let inch_radius = input_radius / INCH_TO_CENTIMETER;
-    (4.0 / 3.0) * PI * inch_radius * inch_radius * inch_radius
+    (4.0 / 3.0) * std::f64::consts::PI * inch_radius * inch_radius * inch_radius //uses RUST's built in PI constant
 }
