@@ -39,7 +39,7 @@ fn main() {
         };
 
         //Print out the results using the calculation functions
-        println!("\n Input radius: {input}cm");
+        println!("\n Input radius: {input} cm");
         println!(" Volume: {:.3} cm^3", calculate_volume_cm(input)); //uses "{:.3}" to limit the output to 3 decimal places
         println!(" Volume: {:.3} in^3", calculate_volume_in(input));
         println!("");
